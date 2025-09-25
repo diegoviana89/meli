@@ -1,6 +1,7 @@
 package com.challenge.meli.infraestructure.adapter.in;
 
 import com.challenge.meli.domain.dto.ProductDomainResponseDto;
+import com.challenge.meli.domain.ports.in.CompareProducts;
 import com.challenge.meli.domain.ports.in.GetProductPort;
 import com.challenge.meli.infraestructure.adapter.in.dto.ApiResponseDto;
 import io.swagger.v3.oas.annotations.Operation;
@@ -17,9 +18,11 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.UUID;
 
 /**
  * REST controller for managing products.
@@ -29,8 +32,9 @@ import java.util.List;
 @Tag(name = "Products", description = "APIs for managing products")
 @RequiredArgsConstructor
 public class ProductController {
-    
-    private final GetProductPort productService;
+
+    private final GetProductPort getProductService;
+    private final CompareProducts compareProductService;
     private final ProductApiMapper productApiMapper;
 
 
@@ -64,7 +68,18 @@ public class ProductController {
     })
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<ApiResponseDto>> getAllProducts() {
-        List<ProductDomainResponseDto> response = productService.getAllProducts();
+        List<ProductDomainResponseDto> response = getProductService.getAllProducts();
+        List<ApiResponseDto> apiResponseDto = response.stream()
+            .map(productApiMapper::convert)
+            .toList();
+        return new ResponseEntity<>(apiResponseDto, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/compare", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<ApiResponseDto>> getProductsById(@RequestParam List<UUID> productId) {
+
+        List<ProductDomainResponseDto> response = compareProductService.compare(productId);
+
         List<ApiResponseDto> apiResponseDto = response.stream()
             .map(productApiMapper::convert)
             .toList();

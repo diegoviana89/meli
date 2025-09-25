@@ -37,8 +37,22 @@ This guide will help you set up and run the Meli Challenge project locally.
    The application will start on `http://localhost:8085`
 
 ## curl
+- get all products
+```bash
 curl --request GET \
 --url http://localhost:8085/product
+```
+- get product by id
+```bash
+curl --request GET \
+  --url 'http://localhost:8085/product/compare?productId=11111111-1111-1111-1111-111111111111%2C22222222-2222-2222-2222-222222222222'
+```
+
+-swagger contract
+```bash
+curl --request GET \
+  --url http://localhost:8085/api-docs
+```
 
 ## Development
 
@@ -55,8 +69,8 @@ curl --request GET \
   - Password: (leave empty)
 
 ### API Documentation
-- Swagger UI: `http://localhost:8080/swagger-ui.html`
-- OpenAPI Documentation: `http://localhost:8080/v3/api-docs`
+- Swagger UI: `http://localhost:8085/swagger-ui.html`
+- OpenAPI Documentation: `http://localhost:8085/v3/api-docs`
 
 ## Testing
 

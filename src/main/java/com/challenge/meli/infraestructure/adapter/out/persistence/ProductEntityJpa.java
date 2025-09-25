@@ -17,6 +17,7 @@ public class ProductEntityJpa {
 
     @Id
     @GeneratedValue(generator = "system-uuid")
+    @Column(columnDefinition = "UUID")
     private UUID id;
     private String name;
     @Column(name = "image_url")
