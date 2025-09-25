@@ -1,4 +1,4 @@
-package com.challenge.meli.model;
+package com.challenge.meli.domain.model;
 
 import java.util.UUID;
 

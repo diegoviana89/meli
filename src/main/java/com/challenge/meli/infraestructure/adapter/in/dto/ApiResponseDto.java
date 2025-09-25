@@ -1,16 +1,14 @@
-package com.challenge.meli.controller.dto;
+package com.challenge.meli.infraestructure.adapter.in.dto;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.UUID;
 
 @Getter
 @Setter
-@NoArgsConstructor
-public class RequestDto {
+@Builder
+@AllArgsConstructor
+public class ApiResponseDto {
 
     private UUID id;
     private String name;
