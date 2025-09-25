@@ -28,3 +28,8 @@ add the dependencies to the pom.xml file to generate the swagger documentation
 I´m using spring doc to generate the API documentation. Please analyze the project and set up the required configuration. The dependencies and application.yml properties already exist, please do not modify those files.
 Keep in mind the controller and Dtos to generate the configuration.
 ```
+
+## to generate unit tests
+```
+generate the unit tests for the classes and methods into this project. Use Junit and mockito when needed to simulate the responses from the DB
+```

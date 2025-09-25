@@ -1,6 +1,36 @@
 # Product details
 
+This application was built with Spring Boot and an in-memory database (H2).
+
+
+SOLID principles and clean code practices were applied to the project.
+
+The following patterns were used:
+- builder
+- Adapter
+- Singleton
+- 
+
+## AI productivity
+Windsurf AI plugin was used to generate some code, configurations and documentation.
+Go to [prompts.md](prompts.md) to know the used prompts.
+
+## Execute the application
+Go to [run.md](run.md) file to know  the prerequisites and how to run the application.
+
+
+## Endpoints
+
+After running the application hit the following endpoints to get the documentation and details
+
+- Swagger UI: `http://localhost:8085/swagger-ui.html`
+- OpenAPI Documentation: `http://localhost:8085/v3/api-docs`
+
 ## Project structure
+
+This project was built using hexagonal architecture to decouple the layers from each other and make it more
+scalable as needed.
+
 
 ```
 ├── src/

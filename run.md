@@ -55,8 +55,8 @@ curl --request GET \
   - Password: (leave empty)
 
 ### API Documentation
-- Swagger UI: `http://localhost:8080/swagger-ui.html`
-- OpenAPI Documentation: `http://localhost:8080/v3/api-docs`
+- Swagger UI: `http://localhost:8085/swagger-ui.html`
+- OpenAPI Documentation: `http://localhost:8085/v3/api-docs`
 
 ## Testing
 

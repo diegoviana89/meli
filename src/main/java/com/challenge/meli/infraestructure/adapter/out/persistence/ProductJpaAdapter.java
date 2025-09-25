@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.UUID;
 
 @RequiredArgsConstructor
 @Component
@@ -17,6 +18,13 @@ public class ProductJpaAdapter implements ProductRepositoryPort {
     @Override
     public List<Product> getAll() {
         List<ProductEntityJpa> result =  productJpaRepository.findAll();
+        return result.stream().map(ProductEntityJpa::toProduct).toList();
+    }
+
+    @Override
+    public List<Product> getAllById(List<UUID> productId) {
+
+        List<ProductEntityJpa> result =  productJpaRepository.findAllById(productId);
         return result.stream().map(ProductEntityJpa::toProduct).toList();
     }
 }
