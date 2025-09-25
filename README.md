@@ -2,6 +2,7 @@
 
 ## Project structure
 
+```
 ├── src/
 │   ├── main/
 │   │   ├── java/
@@ -26,4 +27,8 @@
 ├── README.md
 ├── run.md
 └── settings.gradle        
+```
 
+# get the API documentation
+- http://localhost:8085/swagger-ui.html
+- http://localhost:8085/v3/api-docs

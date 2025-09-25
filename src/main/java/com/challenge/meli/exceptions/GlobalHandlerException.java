@@ -19,7 +19,7 @@ public class GlobalHandlerException {
         return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
     }
 
-    @ExceptionHandler(Exception.class)
+    @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<Map<String, String>> handleException(Exception e){
         Map<String, String> error = new HashMap<>();
         error.put("message", "Error processing request, please contact support");

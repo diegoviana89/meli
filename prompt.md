@@ -18,7 +18,13 @@ create run.md file with the instructions to run the application. Keep in mind th
 pre-requisites to run the application.
 ```
 
-# to generate the swagger documentation, use the following command:
+## to generate the swagger documentation, use the following command:
 ```
 add the dependencies to the pom.xml file to generate the swagger documentation
+```
+
+## to generate api documentation 
+```
+I´m using spring doc to generate the API documentation. Please analyze the project and set up the required configuration. The dependencies and application.yml properties already exist, please do not modify those files.
+Keep in mind the controller and Dtos to generate the configuration.
 ```
