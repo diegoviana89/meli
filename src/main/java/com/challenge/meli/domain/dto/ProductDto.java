@@ -1,16 +1,8 @@
-package com.challenge.meli.controller.dto;
-
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+package com.challenge.meli.domain.dto;
 
 import java.util.UUID;
 
-@Getter
-@Setter
-@NoArgsConstructor
-public class ResponseDto {
+public class ProductDto {
 
     private UUID id;
     private String name;
@@ -19,4 +11,5 @@ public class ResponseDto {
     private float price;
     private int rating;
     private String specifications;
+
 }
