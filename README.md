@@ -9,15 +9,18 @@ The following patterns were used:
 - builder
 - Adapter
 - Singleton
-- 
+
+## Execute the application
+
+You can use the zip file to get the project or you can clone the repository.
+https://github.com/diegoviana89/meli
+
+Go to [run.md](run.md) file to know  the prerequisites and how to run the application.
+
 
 ## AI productivity
 Windsurf AI plugin was used to generate some code, configurations and documentation.
 Go to [prompts.md](prompts.md) to know the used prompts.
-
-## Execute the application
-Go to [run.md](run.md) file to know  the prerequisites and how to run the application.
-
 
 ## Endpoints
 
