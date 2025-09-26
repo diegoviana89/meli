@@ -13,7 +13,9 @@ The following patterns were used:
 ## Execute the application
 
 You can use the zip file to get the project or you can clone the repository.
-https://github.com/diegoviana89/meli
+```bash
+git clone https://github.com/diegoviana89/meli.git
+```
 
 Go to [run.md](run.md) file to know  the prerequisites and how to run the application.
 
