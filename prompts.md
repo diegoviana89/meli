@@ -33,3 +33,9 @@ Keep in mind the controller and Dtos to generate the configuration.
 ```
 generate the unit tests for the classes and methods into this project. Use Junit and mockito when needed to simulate the responses from the DB
 ```
+
+## to generate run.md
+```
+create run.md file with the instructions to run the application locally. Keep in mind the pre-requisites to run the application according to the project structure, languge and tools used.
+
+```
