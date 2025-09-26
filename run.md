@@ -9,7 +9,9 @@ This guide will help you set up and run the Meli Challenge project locally.
 - Your favorite IDE (IntelliJ IDEA, VS Code, or Eclipse recommended)
 
 This project use H2 DB (in memory database), so you don't need to install any database.
-The file data.sql contains all the queries to create and populate the tables.
+The file data.sql contains all the queries to create and populate the tables and it is executed automatically when the application starts.
+if you want to interact with H2 console and view the data, please go to the Database section in this file.
+
 
 ## Getting Started
 
