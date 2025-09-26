@@ -1,5 +1,22 @@
 server:
   port: 8085
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    tryItOutEnabled: true
+    tagsSorter: alpha
+    operationsSorter: method
+    enabled: true
+    path: /swagger-ui.html
+    display-request-duration: true
+    default-models-expand-depth: 1
+    doc-expansion: none
+  packages-to-scan: com.challenge.meli
+  paths-to-match:
+    - /api/**
+    - /**
 spring:
   application:
     name: meli
@@ -17,4 +34,5 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
-    show-sql: true
+      show-sql: true
+      format_sql: true
