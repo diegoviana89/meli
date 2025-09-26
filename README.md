@@ -8,7 +8,9 @@ SOLID principles and clean code practices were applied to the project.
 The following patterns were used:
 - builder
 - Adapter
+- Mediator
 - Singleton
+
 
 ## Execute the application
 
