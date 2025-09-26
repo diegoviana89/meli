@@ -6,7 +6,7 @@ This guide will help you set up and run the Meli Challenge project locally.
 
 - Java 21 JDK (OpenJDK or Oracle JDK)
 - Gradle 8.0 or later (included with project)
-- Your favorite IDE (IntelliJ IDEA, VS Code, or Eclipse recommended)
+- Your favorite IDE (IntelliJ IDEA, VS Code)
 
 This project use H2 DB (in memory database), so you don't need to install any database.
 The file data.sql contains all the queries to create and populate the tables and it is executed automatically when the application starts.
